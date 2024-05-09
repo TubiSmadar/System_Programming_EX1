@@ -1,3 +1,54 @@
+
+# Algorithms Library
+
+This repository contains a C++ library implementing various algorithms.
+
+# Algorithms Library
+
+This repository contains a C++ library implementing various algorithms.
+
+## Files
+
+- `Graph.hpp`: Header file containing the declaration of the Graph class.
+- `Graph.cpp`: Source file containing the implementation of the Graph class.
+- `Algorithms.hpp`: Header file containing the declaration of algorithm functions.
+- `Algorithms.cpp`: Source file containing the implementation of algorithm functions.
+- `Makefile`: Makefile for building and running the project.
+
+## Usage
+
+To build and run the project, you can use the provided Makefile. Here are the available commands:
+
+## Building
+
+### To build the demo executable:
+
+### Running
+
+> To run the demo program:
+
+'make run'
+
+### Testing
+
+>To run tests:
+
+'make test'
+
+### Memory Checking with Valgrind
+
+>To run Valgrind for memory checking:
+
+'make valgrind'
+
+### Cleaning Up
+
+>To clean up compiled files:
+
+'make clean'
+
+
+
 # מטלה 1 - גרפים (Classes and Namespaces)
 
 המטרה שלכם במטלה הזאת היא ליצור מחלקה שמייצגת גרף ולממש אלגוריתמים על הגרפים (זה הזמן להזכר בקורס אלגוריתמים 1).
