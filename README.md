@@ -1,7 +1,4 @@
 
-# Algorithms Library
-
-This repository contains a C++ library implementing various algorithms.
 
 # Algorithms Library
 
@@ -27,25 +24,28 @@ To build and run the project, you can use the provided Makefile. Here are the av
 
 > To run the demo program:
 
-'make run'
+`make demo`
+`./demo`
 
 ### Testing
 
 >To run tests:
 
-'make test'
+`make test`
+`./test`
 
 ### Memory Checking with Valgrind
 
 >To run Valgrind for memory checking:
 
-'make valgrind'
+`make valgrind`
 
 ### Cleaning Up
 
 >To clean up compiled files:
 
-'make clean'
+`make clean`
+
 
 
 
