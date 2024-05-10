@@ -16,7 +16,7 @@ This repository contains a C++ library implementing various algorithms.
 
 To build and run the project, you can use the provided Makefile. Here are the available commands:
 
-## Building
+### Building
 
 ### To build the demo executable:
 
