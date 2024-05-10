@@ -7,7 +7,7 @@ This repository contains a C++ library implementing various algorithms.
 
 - `Graph Representation`: The library uses adjacency matrices to represent graphs.
 - `Algorithms`: It includes implementations for several graph algorithms,
-- `including:`
+`including:`
 - Checking if a graph is connected.
 - Finding shortest paths between vertices using Dijkstra's algorithm.
 - Detecting cycles in directed and undirected graphs.
