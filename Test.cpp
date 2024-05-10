@@ -172,7 +172,7 @@ TEST_CASE("Test negativeCycle")
 
     vector<vector<int>> graph1 = {{-1}};
     g.loadGraph(graph1);
-    // Graph with one vertex cyclic edge.
+    // Graph with one vertex negative cyclic edge.
     std::ostringstream redirectedOutput1;
     std::streambuf* oldStdout1 = std::cout.rdbuf(redirectedOutput1.rdbuf());
     ariel::Algorithms::negativeCycle(g);
@@ -183,7 +183,7 @@ TEST_CASE("Test negativeCycle")
     // Check the content of the stringstream
     CHECK(redirectedOutput1.str() == "Negative cycle found!\n");
 
-
+    // Graph with both negative and positive cycles.
     vector<vector<int>> graph2 =  {{0, 1, -1, -1},
                                    {1, 0, 0, 2}, 
                                    {-1, 0, 0, -4}, 
@@ -198,7 +198,25 @@ TEST_CASE("Test negativeCycle")
     std::cout.rdbuf(oldStdout2);
 
     // Check the content of the stringstream
-    CHECK(redirectedOutput1.str() == "Negative cycle found!\n");
+    CHECK(redirectedOutput2.str() == "Negative cycle found!\n");
+
+    // Undirected graph with 2 negtive edge
+    vector<vector<int>> graph3 = {
+        {0, -1, 0},
+        {-1, 0, -1},
+        {0, -1, 0}};
+        g.loadGraph(graph3);
+    std::ostringstream redirectedOutput3;
+    std::streambuf* oldStdout3 = std::cout.rdbuf(redirectedOutput3.rdbuf());
+    ariel::Algorithms::negativeCycle(g);
+
+    // Restore stdout
+    std::cout.rdbuf(oldStdout3);
+
+    // Check the content of the stringstream
+    CHECK(redirectedOutput3.str() == "No negative cycle found!\n");
+
+    
  
 
 }
