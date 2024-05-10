@@ -3,21 +3,41 @@
 # Algorithms Library
 
 This repository contains a C++ library implementing various algorithms.
+
+## Prerequisites
+- C++ compiler supporting C++11 or later.
+- Makefile (for building the project).
+
+  
 ## Features
 
 - `Graph Representation`: The library uses adjacency matrices to represent graphs.
-- `Algorithms`: It includes implementations for several graph algorithms,
-`including:`
-- Checking if a graph is connected.
-- Finding shortest paths between vertices using Dijkstra's algorithm.
-- Detecting cycles in directed and undirected graphs.
-- Determining if a graph is bipartite.
-- Detecting negative cycles using the Floyd-Warshall algorithm.
+- `Algorithms`: It includes implementations for several graph algorithms:
+   - Checking if a graph is connected.
+   - Finding shortest paths between vertices using Dijkstra's algorithm.
+   - Detecting cycles in directed and undirected graphs.
+   - Determining if a graph is bipartite.
+   - Detecting negative cycles using the Floyd-Warshall algorithm.
 - `Convenience Functions`: Utility functions are provided for converting graph properties into human-readable strings.
 
+## Documentation
 
+### Graph class
+- `Graph()`: Default constructor.
+- `Graph(const std::vector<std::vector<int>>& adjMatrix, size_t numVertices)`: Constructor with adjacency matrix and number of vertices.
+- `void loadGraph(const std::vector<std::vector<int>>& matrix)`: Load a graph from an adjacency matrix.
+- `void printGraph()`: Print the adjacency matrix.
+- `size_t getNumVertices() const`: Get the number of vertices in the graph.
+- `std::vector<std::vector<int>> getAdjMatrix() const`: Get the adjacency matrix of the graph.
 
-## Files
+### Algorithms class
+- `std::vector<int> isConnected(const Graph& g)`: Check if the graph is connected.
+- `std::vector<int> shortestPath(const Graph& g, size_t start, size_t end)`: Find the shortest path between two vertices.
+- `std::vector<int> isContainsCycle(const Graph& g)`: Detect cycles in the graph.
+- `std::vector<std::set<int>> isBipartite(const Graph& g)`: Check if the graph is bipartite and return the two groups.
+- `void negativeCycle(const Graph& g)`: Detect negative cycles in the graph.
+
+### Files
 
 - `Graph.hpp`: Header file containing the declaration of the Graph class.
 - `Graph.cpp`: Source file containing the implementation of the Graph class.
@@ -27,17 +47,22 @@ This repository contains a C++ library implementing various algorithms.
 
 ## Usage
 
+### cloning 
+
+>To clone repository:
+
+`git clone https://github.com/TubiSmadar/System_Programming_EX1.git`
+
+`cd System_Programming_EX1`
+
 To build and run the project, you can use the provided Makefile. Here are the available commands:
-
-### Building
-
-### To build the demo executable:
 
 ### Running
 
 > To run the demo program:
 
 `make demo`
+
 `./demo`
 
 ### Testing
@@ -45,6 +70,7 @@ To build and run the project, you can use the provided Makefile. Here are the av
 >To run tests:
 
 `make test`
+
 `./test`
 
 ### Memory Checking with Valgrind
