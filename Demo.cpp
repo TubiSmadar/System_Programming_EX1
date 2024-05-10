@@ -1,6 +1,6 @@
 /*
- * Demo program for Exercise 2.
- * Author: Benjamin Saldman.
+ * Demo program for Exercise 1.
+ * Author: Tuvia Smadar.
  */
 
 #include "Graph.hpp"
