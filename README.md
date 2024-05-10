@@ -2,7 +2,7 @@
 
 # Algorithms Library
 
-This repository contains a C++ library implementing various algorithms.
+This repository contains a C++ exercise as part of system programming course in Ariel University.
 
 ## Prerequisites
 - C++ compiler supporting C++11 or later.
