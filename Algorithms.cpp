@@ -1,3 +1,8 @@
+/*
+315638577
+gunslokij@gmail.com
+*/
+
 #include "Algorithms.hpp"
 #include <queue>
 #include <vector>
