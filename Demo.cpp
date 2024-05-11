@@ -1,7 +1,7 @@
 /*
- * Demo program for Exercise 1.
- * Author: Tuvia Smadar.
- */
+315638577
+gunslokij@gmail.com
+*/
 
 #include "Graph.hpp"
 #include "Algorithms.hpp"
