@@ -1,3 +1,7 @@
+/*
+315638577
+gunslokij@gmail.com
+*/
 
 #ifndef ALGORITHMS_HPP
 #define ALGORITHMS_HPP
